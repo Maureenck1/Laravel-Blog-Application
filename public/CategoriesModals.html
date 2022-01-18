@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogApplication</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Community-ChatComments.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Drag--Drop-Upload-Form.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="editCategories">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#b6f7f7;">
+                    <h4 class="modal-title">Category Details.</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body" style="background-color:#b6f7f7;">
+                    <h4>Name Of Category:</h4>
+                    <p>Paragraph</p>
+                    <h4>Description Of Category:</h4>
+                    <p>Paragraph</p>
+                    <h4>Creation Date:</h4>
+                    <p>Paragraph</p>
+                </div>
+                <div class="modal-footer" style="background-color:#b6f7f7;"><button class="btn btn-danger" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="text-center">Submit An Image.</h3>
+        <div style="text-align:center;">
+            <form enctype="multipart/form-data">
+                <div class="form-group"><input type="file" accept="image/*" name="image" required=""></div>
+                <div class="form-group"><button class="btn btn-success btn-lg" type="submit"><strong>Button</strong></button></div>
+            </form>
+        </div>
+    </div>
+    <div class="alert alert-danger" role="alert" style="background-color:rgb(213,127,135);"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span><strong>Alert</strong> text.</span></div>
+    <div class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#beebeb;">
+                    <h4 class="modal-title">Enter Name To Search For User.</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user"></i></span></div><input class="form-control" type="text" name="username" placeholder="Username">
+                                <div class="input-group-append"></div>
+                            </div>
+                        </div>
+                        <div style="text-align:center;">
+                            <div class="form-group"><button class="btn btn-success btn-lg" type="submit"><strong>Search.</strong></button></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="background-color:#beebeb;"><button class="btn btn-danger" type="button" data-dismiss="modal"><strong>Close</strong></button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

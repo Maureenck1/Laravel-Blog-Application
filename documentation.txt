@@ -1,0 +1,48 @@
+A). How To Install Entrust and How to use it .
+
+
+
+B). How To Install And Use CKEditor.
+
+
+
+C). How to Intall And Use Image Library.
+
+ 1. Run the command =>   composer require intervention/image
+ 2. To The config/app.php file, add the following to the providers and the aliases arrays respectively. 
+ 
+
+
+D). Command To Write A Migration That Only Modifies The Columns In Use. 
+php artisan make:migration MigrationName
+
+In the migration file, The following should be added 
+
+  */
+    public function up()
+    {
+        Schema::table('posts', function (Blueprint $table) {
+            // The additional Tables To Be Used.
+        });
+    }
+
+     public function down()
+    {
+        Schema::dropColumn('name');
+    }
+
+
+E). How To Store An Image Into The Folder. 
+
+Run The Command, php artisan storage:link ==== This comand id used to mimic the public  folder in storage\app.
+The command to get the name of the file and the  or image is $name = $file->getClientOriginalName();
+The command to get the file name alone is $filename = phpinfo($theFileNameAsAWhole, PHPINFO_FILENAME);
+The command to get the file extension is $fileExtension = $file->getOriginalClientExtension();
+The Command To Store The Image is: $file->storeAs('public/images', $name); == This command will store the file in the image folder in public folder that is 
+       stored in the storage folder that will be shadowed in the public directory.
+
+
+F). How To Install Sweet Alert.
+run the command::  composer require uxweb/sweet-alert
+
+
